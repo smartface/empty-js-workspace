@@ -19,9 +19,9 @@ const Page2 = extend(Page2Design)(
         this.onShow = onShow.bind(this, this.onShow.bind(this));
         // Overrides super.onLoad method
         this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
-        touch.addPressEvent(this.btnSayHello, () => {
-            alert("Hello World!");
-        });
+        this.btnSayHello.onPress = () => {
+            alert("Hello World!")
+        };
     });
 
 /**
