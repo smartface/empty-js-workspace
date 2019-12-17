@@ -20,7 +20,7 @@ const Page2 = extend(Page2Design)(
         // Overrides super.onLoad method
         this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
         this.btnSayHello.onPress = () => {
-            alert("Hello World!")
+            alert("Hello World!");
         };
     });
 
